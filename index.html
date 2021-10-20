@@ -1,0 +1,63 @@
+<!-- PSEUDOCODE FOR CALCULATOR
+1> create structure of the calculator as in what all is needed to perform any task
+2> calculator should take input from user, and perform calculation as per operation requested by user.
+3> calculator should also show the output of result to the user
+4> the code should accept numbers when calculator buttons are pressed (0,1,2,3,4,5,6,7,8,9), operators (+,-, X, ÷), functions (C and =) which are needed for calculator to be fully functional
+5> create a screen to display the result
+6> create CLEAR button when a particular operation is performed and ready for new operation
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<CENTER>
+
+<h1> Calculator </h1>
+<BR>
+<BR>    
+<body>
+    <div class="calculator">
+        <div class="top-container">
+           
+            
+        </div>
+        <div class="display" ></div>
+        <div class="buttons-container">
+           <div class ="button function c" onclick="clear_screen();">C</div>
+           <div class ="button function pm" onclick="get_operator('+')">+/-</div>
+           <div class ="button function percent">%</div>  
+           <div class ="button operator division" onclick="get_operator('÷');">÷</div>  
+           <div class ="button number-7" onclick="click_me('7');">7</div>  
+           <div class ="button number-8" onclick="click_me('8');">8</div>  
+           <div class ="button number-9" onclick="click_me('9');">9</div> 
+           <div class ="button operator multiplication" onclick="get_operator('X');">X</div> 
+           <div class ="button number-4" onclick="click_me('4');">4</div>  
+           <div class ="button number-5" onclick="click_me('5');">5</div>  
+           <div class ="button number-6" onclick="click_me('6');">6</div> 
+           <div class ="button operator subtraction" onclick="get_operator('-')">−</div> 
+           <div class ="button number-1" onclick="click_me('1');">1</div>  
+           <div class ="button number-2" onclick="click_me('2');">2</div>  
+           <div class ="button number-3" onclick="click_me('3');">3</div> 
+           <div class ="button operator addition" onclick="get_operator('+');">+</div>
+           <div class ="button number-0" onclick="click_me('0');">0</div>  
+           <div class ="button decimal" onclick="click_me('.');">.</div> 
+           <div class ="button operator equal" onclick="answer1();">=</div>
+        </div>
+        <div class="bottomwhite"></div>
+    </div>
+   
+
+</CENTER>
+
+<script src="main.js"></script>
+</body>
+</html>
